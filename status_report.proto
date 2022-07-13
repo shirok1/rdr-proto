@@ -28,7 +28,3 @@ message StatusStruct {
   }
   optional string optional_error_message = 3;
 }
-
-service Reporter {
-  rpc GetReportStream(google.protobuf.Empty) returns (stream Report) {}
-}

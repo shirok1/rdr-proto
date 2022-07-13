@@ -10,7 +10,3 @@ message EncodedImg {
   google.protobuf.Timestamp timestamp = 1;
   bytes data = 2;
 }
-
-service ImageService {
-  rpc GetImageStream(google.protobuf.Empty) returns (stream EncodedImg) {}
-}

@@ -59,7 +59,3 @@ enum Color {
   N = 2;
   P = 3;
 }
-
-service DetectorService {
-  rpc GetArmorStream(google.protobuf.Empty) returns (stream DetectedArmor) {}
-}

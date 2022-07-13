@@ -14,7 +14,3 @@ message ControlSignal {
     START_RECORDING = 1;
   }
 }
-
-service SignalReceiver {
-  rpc SendSignal(stream ControlSignal) returns (google.protobuf.Empty) {}
-}
