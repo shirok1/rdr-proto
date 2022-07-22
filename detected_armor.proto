@@ -6,6 +6,12 @@ import "google/protobuf/timestamp.proto";
 //import "google/protobuf/empty.proto";
 
 
+message ImageAndArmor {
+  google.protobuf.Timestamp timestamp = 1;
+  bytes data = 2;
+  repeated CarInfo armors = 3;
+}
+
 message DetectedArmor {
   google.protobuf.Timestamp timestamp = 1;
   repeated CarInfo armors = 2;

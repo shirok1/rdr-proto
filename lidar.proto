@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package rdr;
+
+import "google/protobuf/timestamp.proto";
+
+message LiDARFilteredPoints{
+  google.protobuf.Timestamp timestamp = 1;
+  repeated LiDARPoint points = 2;
+}
+
+message LiDARPoint{
+  int32 x = 1;
+  int32 y = 2;
+  float z = 3;
+}
