@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package rdr;
+
+import "google/protobuf/timestamp.proto";
+import "detected_armor.proto";
+
+
+message DetectedArmorBag {
+  google.protobuf.Timestamp timestamp = 1;
+  repeated DetectedArmor sequence = 2;
+}
